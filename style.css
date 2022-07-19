@@ -83,3 +83,9 @@ body {
   border-width: 0.1px;
 
 }
+
+.display-1{
+  align-items: center; 
+  justify-content: center;
+}
+

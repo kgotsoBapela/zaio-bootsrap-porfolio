@@ -44,7 +44,7 @@
 
           <main
             class="text-center">
-            <h1 class="display-1">I am Kgotso Bapela</h1>
+            <h1 id="typed_heading" class="display-1"></h1>
             <span id="typed"class="lead"> </span>
           </main>
     </div>
@@ -88,7 +88,7 @@
                 <p class="lead">
                   Working in Networking technical Support, and WiFi Technicial, 
                   Full stack developer with language such HTML & CSS, 
-                  Javascript, and object orinetation with MongoDB
+                  Javascript, and Object Orientation(OOP) with MongoDB
                 </p>
               </div>
             </div>
@@ -100,6 +100,32 @@
       <div class="container p-5">
         <h1 class="text-center"><mark>Projects</mark></h1>
         <div class="row">
+
+           <div class="col-md-4 mt-3"> <!-- Tesla Clone  -->
+            <div class="card">
+              <img
+                src="assets/tesla-card.jpg" card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tesla Website Clone</h5>
+                <p class="card-text">Built this with HTML & CSS.</p>
+                <a
+                  href="https://kgotso-tesla-clone.netlify.app/"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >View Website</a
+                >
+                <a
+                  href="https://github.com/kgotsoBapela/zaio-tesla-clone"
+                  target="_blank"
+                  class="btn btn-outline-dark"
+                  ><i class="bi bi-code-slash"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
           <div class="col-md-4 mt-3">
             <div class="card">
               <img
@@ -125,6 +151,7 @@
               </div>
             </div>
           </div>
+
           <div class="col-md-4 mt-3">
             <div class="card">
               <img
@@ -261,13 +288,29 @@
     </script>
     <!-- Typing effect animate-->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    
+    
     <script>
-      var typed = new Typed('#typed', {
-        strings: ['A Fullstack Developer.','A Radio(RF) Technician.','I love to code'],
-        loop: true,
-        shuffle: true,
-        typeSpeed: 65,
-      });
+
+        // heading
+        var typed_heading = new Typed('#typed_heading', {
+            strings: ['I am Kgotso Bapela'],
+            typeSpeed: 65,
+            showCursor: false,
+          });
+
+          // Bottom Text
+          function bottomText() {
+            var typed = new Typed('#typed', {
+              strings: ['A Fullstack Developer. ', 'I love to code. '],
+              loop: true,
+              shuffle: true,
+              typeSpeed: 65,
+              cursorChar: '_',
+          });  }
+
+        setTimeout(bottomText, 3000);
+
     </script>
 
   </body>
