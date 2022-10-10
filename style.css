@@ -88,4 +88,10 @@ body {
   align-items: center; 
   justify-content: center;
 }
-
+.card-img-top-inactive{
+  opacity: 0.5;
+}
+.card-img-top-inactive::hover{  
+  opacity: 1.0;
+  color: red;
+}
