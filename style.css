@@ -95,3 +95,9 @@ body {
   opacity: 1.0;
   color: red;
 }
+.progress{
+  position: relative;
+  bottom: 10px;
+  /* padding-bottom:  10px; */
+  height: 15px;
+}
